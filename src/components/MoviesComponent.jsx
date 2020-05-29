@@ -1,7 +1,6 @@
 import React, {Component} from 'react';
 import {getMovies} from "../services/fakeMovieService";
 import Like from './common/like';
-import Pagination from "./common/pagination";
 
 class Movies extends Component{
 state = {
@@ -14,22 +13,23 @@ state = {
     }
 
     handleLike  = (movie) => {
-   /* const movies = this.state.movies.map(m => !(m._id.liked));*/
         const movies = [...this.state.movies];
         const index = movies.indexOf(movie);
-        movies[index] = {...movies}
+        movies[index] = {...movies[index]};
         movies[index].liked = !movies[index].liked;
-        this.setState({movies})
+        this.setState({movies});
     }
+
 
     render() {
     const {length: MoviesCount} = this.state.movies;
+
 if(MoviesCount === 0)
     return <p> There are no movies in the database</p>;
 
         return( <React.Fragment>
+                <p> Showing {MoviesCount} movies in the database</p>
         <table className="table">
-            <p> Showing {MoviesCount} movies in the database</p>
             <thead>
             <tr>
                 <th>Title</th>
@@ -47,15 +47,16 @@ if(MoviesCount === 0)
                     <td>{movie.genre.name} </td>
                     <td>{movie.numberInStock}</td>
                     <td>{movie.dailyRentalRate} </td>
-                    <td> <Like liked={movie.liked}
-                    onClick={() => this.handleLike(movie)}/> </td>
+                    <td>
+                        <Like liked={movie.liked}
+                    onClick={() => this.handleLike(movie)}/>
+                    </td>
                     <td><button className="btn btn-danger btn-sm"
             onClick={() => this.handleDelete(movie)}>Delete</button></td>
                 </tr>
             })}
             </tbody>
         </table>
-       <Pagination/>
         </React.Fragment>
         );
     }
