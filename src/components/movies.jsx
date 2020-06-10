@@ -30,7 +30,7 @@ state = {
 
     render() {
     const {length: MoviesCount} = this.state.movies;
-    const {count, pageSize, currentPage,movies: allMovies} = this.state;
+    const {pageSize, currentPage,movies: allMovies} = this.state;
 
 if(MoviesCount === 0)
     return <p> There are no movies in the database</p>;
@@ -67,7 +67,7 @@ if(MoviesCount === 0)
             })}
             </tbody>
         </table>
-                <Pagination itemsCount={count}
+                <Pagination itemsCount={MoviesCount}
                             pageSize={pageSize}
                             currentPage={currentPage}
                             onPageChange={this.handlePageChange}
