@@ -7,6 +7,7 @@ import Pagination from "./common/pagination";
 import {paginate} from '../utils/paginate';
 import _  from 'lodash';
 
+
 class Movies extends Component{
 state = {
     movies: [],
