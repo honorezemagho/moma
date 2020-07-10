@@ -8,6 +8,7 @@ const Input = ({name, label, value, onChange}) => {
             value={value}
             onChange={onChange}
             id={name}
+            name={name}
             type="text"
             className="form-control"/>
         </div>
