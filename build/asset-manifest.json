@@ -1,0 +1,26 @@
+{
+  "files": {
+    "main.css": "/honorezemagho/moma/static/css/main.a05a95bf.chunk.css",
+    "main.js": "/honorezemagho/moma/static/js/main.ba7bebbb.chunk.js",
+    "main.js.map": "/honorezemagho/moma/static/js/main.ba7bebbb.chunk.js.map",
+    "runtime-main.js": "/honorezemagho/moma/static/js/runtime-main.ee0c8872.js",
+    "runtime-main.js.map": "/honorezemagho/moma/static/js/runtime-main.ee0c8872.js.map",
+    "static/css/2.5e38964c.chunk.css": "/honorezemagho/moma/static/css/2.5e38964c.chunk.css",
+    "static/js/2.dc846b93.chunk.js": "/honorezemagho/moma/static/js/2.dc846b93.chunk.js",
+    "static/js/2.dc846b93.chunk.js.map": "/honorezemagho/moma/static/js/2.dc846b93.chunk.js.map",
+    "index.html": "/honorezemagho/moma/index.html",
+    "precache-manifest.636abb2333ce1831ca4abdb63c9d5944.js": "/honorezemagho/moma/precache-manifest.636abb2333ce1831ca4abdb63c9d5944.js",
+    "service-worker.js": "/honorezemagho/moma/service-worker.js",
+    "static/css/2.5e38964c.chunk.css.map": "/honorezemagho/moma/static/css/2.5e38964c.chunk.css.map",
+    "static/css/main.a05a95bf.chunk.css.map": "/honorezemagho/moma/static/css/main.a05a95bf.chunk.css.map",
+    "static/js/2.dc846b93.chunk.js.LICENSE.txt": "/honorezemagho/moma/static/js/2.dc846b93.chunk.js.LICENSE.txt",
+    "static/media/font-awesome.min.css": "/honorezemagho/moma/static/media/fontawesome-webfont.fee66e71.woff"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.ee0c8872.js",
+    "static/css/2.5e38964c.chunk.css",
+    "static/js/2.dc846b93.chunk.js",
+    "static/css/main.a05a95bf.chunk.css",
+    "static/js/main.ba7bebbb.chunk.js"
+  ]
+}
